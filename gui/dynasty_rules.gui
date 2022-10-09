@@ -11,7 +11,7 @@ types DynastyRules
 			onclick = "[VariableSystem.Toggle( 'dynasty_rules_is_menu_visible' )]"
 			tooltip = "dynasty_rules_menu_title"
 
-			button_dynasty_rules = {
+			btn_icon_list_check = {
 				parentanchor = center
 				size = { 20 20 }
 				alwaystransparent = yes
