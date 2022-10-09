@@ -1,0 +1,53 @@
+﻿dynasty_rules_toggle_house_marriages = {
+	scope = character
+	is_valid = {
+		exists = dynasty
+		dynasty = { dynast = root }
+	}
+	is_shown = {
+		exists = dynasty
+		NOT = {
+			dynasty = {
+				has_dynasty_modifier = marriages_between_house_members_are_forbidden
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				dynasty = { has_dynasty_modifier = marriages_between_house_members_are_forbidden }
+			}
+			dynasty = { remove_dynasty_modifier = marriages_between_house_members_are_forbidden }
+		}
+		else = {
+			dynasty = { add_dynasty_modifier = marriages_between_house_members_are_forbidden }
+		}
+	}
+}
+
+dynasty_rules_toggle_dynasty_marriages = {
+	scope = character
+	is_valid = {
+		exists = dynasty
+		dynasty = { dynast = root }
+	}
+	is_shown = {
+		exists = dynasty
+		NOT = {
+			dynasty = {
+				has_dynasty_modifier = marriages_between_dynasty_members_are_forbidden
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				dynasty = { has_dynasty_modifier = marriages_between_dynasty_members_are_forbidden }
+			}
+			dynasty = { remove_dynasty_modifier = marriages_between_dynasty_members_are_forbidden }
+		}
+		else = {
+			dynasty = { add_dynasty_modifier = marriages_between_dynasty_members_are_forbidden }
+		}
+	}
+}

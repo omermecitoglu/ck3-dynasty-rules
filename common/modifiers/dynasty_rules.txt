@@ -1,0 +1,7 @@
+﻿marriages_between_house_members_are_forbidden = {
+	icon = county_modifier_control_negative
+}
+
+marriages_between_dynasty_members_are_forbidden = {
+	icon = county_modifier_control_negative
+}

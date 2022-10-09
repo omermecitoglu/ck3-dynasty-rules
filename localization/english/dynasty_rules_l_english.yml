@@ -1,0 +1,12 @@
+﻿l_english:
+  dynasty_rules_menu_title: "Dynasty Rules"
+  dynasty_rules_menu_house_marriages: "Marriages between house members are allowed"
+  dynasty_rules_menu_dynasty_marriages: "Marriages between dynasty houses are allowed"
+
+  marriages_between_house_members_are_forbidden: "Dynasty rule"
+  marriages_between_house_members_are_forbidden_desc: "[dynast|e] forbids marriages between same house members in this dynasty."
+  marriages_between_dynasty_members_are_forbidden: "Dynasty rule"
+  marriages_between_dynasty_members_are_forbidden_desc: "[dynast|e] forbids marriages between dynasty houses in this dynasty."
+
+  MARRIAGES_BETWEEN_HOUSE_MEMBERS_ARE_FORBIDDEN_REASON: "Marriages between house members are forbidden: $VALUE|=+0$"
+  MARRIAGES_BETWEEN_DYNASTY_MEMBERS_ARE_FORBIDDEN_REASON: "Marriages between dynasty houses are forbidden: $VALUE|=+0$"

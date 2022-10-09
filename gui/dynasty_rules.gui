@@ -1,0 +1,114 @@
+dynasty_rules_menu = {}
+
+types DynastyRules
+{
+	type dynasty_rules_toggle_menu = hbox {
+		# layoutpolicy_horizontal = expanding
+		# layoutpolicy_vertical = expanding
+
+		button_round = {
+			datacontext = "[GetVariableSystem]"
+			onclick = "[VariableSystem.Toggle( 'dynasty_rules_is_menu_visible' )]"
+			tooltip = "dynasty_rules_menu_title"
+
+			button_dynasty_rules = {
+				parentanchor = center
+				size = { 20 20 }
+				alwaystransparent = yes
+				inherit_visual_state = no
+			}
+		}
+	}
+	type dynasty_rules_house_marriage_check = button_checkbox_label {
+		layoutpolicy_horizontal = expanding
+		datacontext = "[GetScriptedGui('dynasty_rules_toggle_house_marriages')]"
+		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		# tooltip = "dynasty_rules_menu_house_marriages_tooltip"
+
+		blockoverride "checkbox"
+		{
+			checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		}
+
+		blockoverride "text"
+		{
+			text = "dynasty_rules_menu_house_marriages"
+		}
+	}
+	type dynasty_rules_dynasty_marriage_check = button_checkbox_label {
+		layoutpolicy_horizontal = expanding
+		datacontext = "[GetScriptedGui('dynasty_rules_toggle_dynasty_marriages')]"
+		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		# tooltip = "dynasty_rules_menu_dynasty_marriages_tooltip"
+
+		blockoverride "checkbox"
+		{
+			checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+		}
+
+		blockoverride "text"
+		{
+			text = "dynasty_rules_menu_dynasty_marriages"
+		}
+	}
+	type dynasty_rules_menu = window {
+		name = "dynasty_rules_menu"
+		parentanchor = center
+		size = { 500 180 }
+		movable = no
+		layer = top
+		filter_mouse = all
+		alwaystransparent = no
+
+		using = Window_Background
+		using = Window_Decoration
+		using = Window_Movable
+
+		datacontext = "[GetVariableSystem]"
+		visible = "[GetVariableSystem.Exists( 'dynasty_rules_is_menu_visible' )]"
+
+		vbox = {
+			using = Window_Margins
+
+			header_pattern = { # title
+				layoutpolicy_horizontal = expanding
+
+				blockoverride "header_text"
+				{
+					text = "dynasty_rules_menu_title"
+				}
+
+				blockoverride "button_close"
+				{
+					datacontext = "[GetVariableSystem]"
+					onclick = "[VariableSystem.Toggle( 'dynasty_rules_is_menu_visible' )]"
+				}
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				vbox = {
+					# layoutpolicy_horizontal = expanding
+					hbox = { # Dynasty Marriage
+						layoutpolicy_horizontal = expanding
+						# margin_left = 36
+						margin_bottom = 15
+						dynasty_rules_house_marriage_check = {}
+						expand = {}
+					}
+					hbox = { # House Marriage
+						layoutpolicy_horizontal = expanding
+						# margin_left = 36
+						margin_bottom = 15
+						dynasty_rules_dynasty_marriage_check = {}
+						expand = {}
+					}
+				}
+				vbox = { layoutpolicy_vertical = expanding }
+			}
+		}
+	}
+}
