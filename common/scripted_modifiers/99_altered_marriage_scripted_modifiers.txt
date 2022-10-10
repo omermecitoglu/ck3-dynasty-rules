@@ -1,4 +1,4 @@
-# 1.7.2
+﻿# 1.7.2
 
 marriage_ai_accept_modifier = { ###MARRIAGE SCRIPTED MODIFIERS###
 	#########

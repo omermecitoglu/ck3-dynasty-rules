@@ -1,4 +1,16 @@
-﻿dynasty_rules_toggle_house_marriages = {
+﻿dynasty_rules_is_this_my_dynasty = {
+	scope = character
+	saved_scopes = {
+  	target
+	}
+	is_Valid = {
+		exists = dynasty
+		exists = scope:target
+		scope:target = dynasty
+	}
+}
+
+dynasty_rules_toggle_house_marriages = {
 	scope = character
 	is_valid = {
 		exists = dynasty

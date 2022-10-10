@@ -3,8 +3,8 @@ dynasty_rules_menu = {}
 types DynastyRules
 {
 	type dynasty_rules_toggle_menu = hbox {
-		# layoutpolicy_horizontal = expanding
-		# layoutpolicy_vertical = expanding
+		datacontext = "[GetScriptedGui('dynasty_rules_is_this_my_dynasty')]"
+		visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope('target', DynastyHouse.GetDynasty.MakeScope ).End)]"
 
 		button_round = {
 			datacontext = "[GetVariableSystem]"
