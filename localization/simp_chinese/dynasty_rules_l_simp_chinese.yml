@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+  dynasty_rules_menu_title: "家规"
+  dynasty_rules_menu_house_marriages: "允许家族成员间的婚姻"
+  dynasty_rules_menu_dynasty_marriages: "允许宗族成员间的婚姻"
+  marriages_between_house_members_are_forbidden: "家规"
+  marriages_between_house_members_are_forbidden_desc: "[dynast|e]禁止宗族成员间的婚姻。"
+  marriages_between_dynasty_members_are_forbidden: "家规"
+  marriages_between_dynasty_members_are_forbidden_desc: "[dynast|e]禁止家族成员间的婚姻。"
+  MARRIAGES_BETWEEN_HOUSE_MEMBERS_ARE_FORBIDDEN_REASON: "禁止家族成员间的婚姻：$VALUE|=+0$"
+  MARRIAGES_BETWEEN_DYNASTY_MEMBERS_ARE_FORBIDDEN_REASON: "禁止宗族成员间的婚姻：$VALUE|=+0$"
