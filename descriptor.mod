@@ -3,5 +3,5 @@ tags={
 	"Gameplay"
 }
 name="Dynasty Rules"
-supported_version="1.7.*"
+supported_version="1.8.*"
 remote_file_id="2873231147"
