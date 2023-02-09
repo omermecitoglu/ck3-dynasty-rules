@@ -1,0 +1,10 @@
+﻿l_german:
+  dynasty_rules_menu_title: "Dynastieregeln"
+  dynasty_rules_menu_house_marriages: "Ehen zwischen Hausmitgliedern sind gestattet"
+  dynasty_rules_menu_dynasty_marriages: "Heiraten zwischen Dynastiehäusern sind erlaubt"
+  marriages_between_house_members_are_forbidden: "Dynastie Regel"
+  marriages_between_house_members_are_forbidden_desc: "[dynast|e] verbietet in dieser Dynastie Hochzeiten zwischen denselben Hausmitgliedern."
+  marriages_between_dynasty_members_are_forbidden: "Dynastie Regel"
+  marriages_between_dynasty_members_are_forbidden_desc: "[dynast|e] verbietet in dieser Dynastie Hochzeiten zwischen Dynastie Häusern."
+  MARRIAGES_BETWEEN_HOUSE_MEMBERS_ARE_FORBIDDEN_REASON: "Ehen zwischen Hausmitgliedern sind verboten: $VALUE|=+0$"
+  MARRIAGES_BETWEEN_DYNASTY_MEMBERS_ARE_FORBIDDEN_REASON: "Ehen zwischen Dynastiehäuser sind verboten: $VALUE|=+0$"
