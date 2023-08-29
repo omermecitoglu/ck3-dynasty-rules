@@ -1,0 +1,10 @@
+﻿l_russian:
+  dynasty_rules_menu_title: "Правила династии"
+  dynasty_rules_menu_house_marriages: "Браки между членами дома разрешены"
+  dynasty_rules_menu_dynasty_marriages: "Браки между домами династии разрешены"
+  marriages_between_house_members_are_forbidden: "Правило династии"
+  marriages_between_house_members_are_forbidden_desc: "[dynast|e] запрещает браки между членами одного дома в этой династии."
+  marriages_between_dynasty_members_are_forbidden: "Правило династии"
+  marriages_between_dynasty_members_are_forbidden_desc: "[dynast|e] запрещает браки между домами в одной династии в этой династии."
+  MARRIAGES_BETWEEN_HOUSE_MEMBERS_ARE_FORBIDDEN_REASON: "Браки между членами дома запрещены: $VALUE|=+0$"
+  MARRIAGES_BETWEEN_DYNASTY_MEMBERS_ARE_FORBIDDEN_REASON: "Браки между домами династии запрещены: $VALUE|=+0$"

@@ -1,0 +1,10 @@
+﻿l_korean:
+  dynasty_rules_menu_title: "가문 혼인규칙"
+  dynasty_rules_menu_house_marriages: "집안 구성원 사이 결혼을 허락한다"
+  dynasty_rules_menu_dynasty_marriages: "대가문에 소속된 집안 사이의 결혼을 허락한다"
+  marriages_between_house_members_are_forbidden: "가문 혼인규칙"
+  marriages_between_house_members_are_forbidden_desc: "[dynast|e] 가문은 같은 집안 구성원 사이 결혼을 금한다"
+  marriages_between_dynasty_members_are_forbidden: "가문 혼인규칙"
+  marriages_between_dynasty_members_are_forbidden_desc: "[dynast|e] 가문은 대가문에 소속된 모든 집안 구성원 사이의 결혼을 금한다"
+  MARRIAGES_BETWEEN_HOUSE_MEMBERS_ARE_FORBIDDEN_REASON: "같은 집안 구성원 사이 결혼은 금지됩니다: $VALUE|=+0$"
+  MARRIAGES_BETWEEN_DYNASTY_MEMBERS_ARE_FORBIDDEN_REASON: "대가문에 소속된 모든 집안 구성원 사이의 결혼은 금지됩니다: $VALUE|=+0$"
